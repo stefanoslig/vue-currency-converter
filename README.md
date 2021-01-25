@@ -1,5 +1,7 @@
 # vue-currency-converter [![Build Status](https://travis-ci.com/stefanoslig/vue-currency-converter.svg?branch=main)](https://travis-ci.com/stefanoslig/vue-currency-converter)
 
+[stefanoslig.github.io/vue-currency-converter](https://stefanoslig.github.io/vue-currency-converter/)
+
 ## Project setup
 ```
 npm install
