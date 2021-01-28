@@ -1,7 +1,7 @@
 import axios from "axios";
-import { ExchangeRates } from "@/models/ExchangeRates";
-import { RatesEnum } from "@/models/RatesEnum";
-import { HistoryRates } from "@/models/HistoryRates";
+import { ExchangeRates } from "../models/ExchangeRates";
+import { RatesEnum } from "../models/RatesEnum";
+import { HistoryRates } from "../models/HistoryRates";
 import { formatDate } from "./utils";
 
 const BASE_URL = "https://api.exchangeratesapi.io";

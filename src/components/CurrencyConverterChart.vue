@@ -3,13 +3,13 @@
 </template>
 
 <script lang="ts">
-import { RatesEnum } from "@/models/RatesEnum";
+import { RatesEnum } from "../models/RatesEnum";
 import { defineComponent, onMounted, PropType, Ref, ref, toRefs, watch } from "vue";
 // @ts-ignore
 import VueApexCharts from "vue3-apexcharts";
-import * as ratesApi from "@/api/ExchangeRatesApi";
-import { HistoryRates } from "@/models/HistoryRates";
-import { ChartOptions, ChartSeries } from "@/models/ChartConf";
+import * as ratesApi from "../api/ExchangeRatesApi";
+import { HistoryRates } from "../models/HistoryRates";
+import { ChartOptions, ChartSeries } from "../models/ChartConf";
 
 export default defineComponent({
   name: "CurrencyConverterChart",

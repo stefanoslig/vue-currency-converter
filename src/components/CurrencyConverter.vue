@@ -37,9 +37,9 @@
 </template>
 
 <script lang="ts">
-import * as ratesApi from "@/api/ExchangeRatesApi";
-import { ExchangeRates } from "@/models/ExchangeRates";
-import { RatesEnum } from "@/models/RatesEnum";
+import * as ratesApi from "../api/ExchangeRatesApi";
+import { ExchangeRates } from "../models/ExchangeRates";
+import { RatesEnum } from "../models/RatesEnum";
 import { defineComponent, onMounted, ref, watch } from "vue";
 import CurrencyConverterChart from "./CurrencyConverterChart.vue";
 
@@ -54,7 +54,7 @@ export default defineComponent({
     const currencyTo = ref<RatesEnum>(RatesEnum.CAD);
     const data = ref<ExchangeRates | null>(null);
 
-    const getLatestRates = async (base?: RatesEnum) => {
+    const getLatestRates = async (base = RatesEnum.USD) => {
       data.value = await ratesApi.getExchangeRates(base);
     };
 
